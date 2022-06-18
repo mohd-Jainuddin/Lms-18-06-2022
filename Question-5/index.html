@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Take two numbers and find product of all numbers between them that satisfy following condition (inclusive
+        range):
+        Condition 1 - Second last digit of number is 4
+        Condition 2 - Numbers should be even </h1>
+    <h2>num1=10,num2=25</h2>
+    <script>
+        let num1=10
+        let num2=25
+        let rem=0
+        let pro=1
+        while(num1<=num2){
+            rem=num1%10
+            if(num1%2==0 && rem==4){
+                pro*=num1
+            }
+            num1++
+        }
+        document.write(pro)
+    </script>
+
+</body>
+
+</html>

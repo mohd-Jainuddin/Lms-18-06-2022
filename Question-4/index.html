@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check whether the given number is an armstrong number or not. <h2>num is 371</h2>
+    </h1>
+    <script>
+        let num=371
+        let s=num
+        let r=0,p=0
+        while(num){
+            r=num%10
+            p+=r**3
+            num=Math.floor(num/10)
+        }
+        if(s==p){
+            document.write("yes")
+        }
+        else{
+            document.write("no")
+        }
+    </script>
+</body>
+</html>
